@@ -39,17 +39,19 @@ for p, q in top_11:
     k.append(p)
     v.append(q)
 
+print(k)
+print(v)
 # removing 'country_code'
-if k[0] == "country_code":
-    k = k[1:]
-    v = v[1:]
+if k[-1] == "country_code":
+    k = k[:-1]
+    v = v[:-1]
 else:
     k = k[1:]
     v = v[1:]
 
 # test
-for i in range(len(k)):
-    print(k[i], v[i])
+print(k)
+print(v)
 
 # importing needed libraries
 import matplotlib

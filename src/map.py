@@ -66,7 +66,7 @@ with zipfile.ZipFile(args.input_path) as archive:
                         tweet['place']['country_code']
                         country_code = tweet['place']['country_code']
                         if hashtag in text:
-                            counter_country[hashtag][lang] += 1
+                            counter_country[hashtag][country_code] += 1
                         counter_lang['_all'][lang] += 1
                     except:
                         country_code='Name'
