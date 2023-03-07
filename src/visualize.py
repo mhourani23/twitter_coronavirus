@@ -44,8 +44,8 @@ if k[0] == "country_code":
     k = k[1:]
     v = v[1:]
 else:
-    k = k[:-1]
-    v = v[:-1]
+    k = k[1:]
+    v = v[1:]
 
 # test
 for i in range(len(k)):
@@ -76,7 +76,7 @@ else:
     if args.key == "#coronavirus":
         plt.savefig('eng_country_plot3.png')
     else:
-        plt.savefig('kor_country_plot3.png')
+        plt.savefig('kor_country_plot4.png')
 
 
 
