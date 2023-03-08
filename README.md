@@ -1,5 +1,5 @@
 # Coronavirus twitter analysis
-
+Note that I have saved the correct files to outputs2, not outputs. I had a bug in my code so the files in the outputs folder are not correct.
 ### Task 4
 Task: provide a brief explanation of your results and include the 4 generate png files
 

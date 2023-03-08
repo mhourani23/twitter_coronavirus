@@ -4,7 +4,7 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--input_path',required=True)
-parser.add_argument('--output_folder',default='outputs')
+parser.add_argument('--output_folder',default='outputs2')
 args = parser.parse_args()
 
 # imports
@@ -69,7 +69,7 @@ with zipfile.ZipFile(args.input_path) as archive:
                             counter_country[hashtag][country_code] += 1
                         counter_lang['_all'][lang] += 1
                     except:
-                        country_code='Name'
+                        country_code='NA'
                         counter_country[hashtag]['country_code'] += 1
                     if hashtag in text:
                         counter_lang[hashtag][lang] += 1
